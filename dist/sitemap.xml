@@ -7,6 +7,18 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.adlbusinessconsulting.com/blog/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.adlbusinessconsulting.com/blog/ai-and-accounting.html</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.adlbusinessconsulting.com/blog/bookkeeping-habits.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
