@@ -1,0 +1,48 @@
+/* ── Design tokens — single source of truth for the brand palette ─────── */
+:root {
+  --c-navy-deepest: #0d1f3c;  /* hero/section background, headings        */
+  --c-navy-deep:    #142b56;  /* hover states, dark accents               */
+  --c-navy:         #1a3d6e;  /* primary buttons, footer links            */
+  --c-navy-soft:    #1a6a8a;  /* eyebrow/category text                    */
+  --c-accent:       #67cbea;  /* brand accent (CTAs, dividers, swatch)    */
+  --c-text:         #2a3a52;  /* article body text                        */
+  --c-text-mid:     #3a4a5e;  /* body text on light backgrounds           */
+  --c-text-muted:   #5a6a82;  /* secondary text                           */
+  --c-text-faint:   #7a8a9e;  /* tertiary text, captions                  */
+  --c-bg-soft:      #f7f9fc;  /* card backgrounds, soft fills             */
+  --c-danger:       #e05a5a;  /* error states, destructive actions        */
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  color: var(--c-navy-deepest);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+::selection { background: rgba(103,203,234,0.3); }
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+@media (max-width: 700px) {
+  .nav-desktop { display: none !important; }
+  .nav-mobile { display: flex !important; }
+}
+@media (min-width: 701px) {
+  .nav-mobile { display: none !important; }
+  .nav-mobile-menu { display: none !important; }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f0f5fa; }
+::-webkit-scrollbar-thumb { background: rgba(26,61,110,0.25); border-radius: 3px; }
+
+input:focus, select:focus, textarea:focus { outline: none; }
+a:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 3px; border-radius: 4px; }
+button:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 3px; }
